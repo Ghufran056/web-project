@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Velour Motors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">VELOUR<span>.</span></a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cars.html">Inventory</a></li>
+          <li><a href="car-detail.html">Showcase</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ PAGE HEADER ============ -->
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow reveal">Get in Touch</p>
+      <h1 class="reveal">Let's Talk</h1>
+      <p class="page-sub reveal">Questions, viewings, or a custom search — our team is at your service.</p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT GRID ============ -->
+  <section class="contact-section">
+    <div class="container contact-grid">
+
+      <!-- Form -->
+      <div class="contact-form-wrap reveal">
+        <h2>Send a Message</h2>
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" />
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 555 123 4567" />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can we help?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold btn-lg">Send Message</button>
+          <p class="form-success" id="formSuccess" hidden>Thank you — we'll be in touch within 24 hours.</p>
+        </form>
+      </div>
+
+      <!-- Info Cards -->
+      <div class="contact-info">
+        <div class="info-card reveal">
+          <div class="info-icon">⚲</div>
+          <h3>Address</h3>
+          <p>42 Crescent Boulevard<br/>Mayfair, London W1K 5LB</p>
+        </div>
+        <div class="info-card reveal">
+          <div class="info-icon">☏</div>
+          <h3>Phone</h3>
+          <p>+44 20 7946 0991<br/>+44 7700 900123</p>
+        </div>
+        <div class="info-card reveal">
+          <div class="info-icon">✉</div>
+          <h3>Email</h3>
+          <p>hello@velourmotors.com<br/>sales@velourmotors.com</p>
+        </div>
+        <div class="info-card reveal">
+          <div class="info-icon">◷</div>
+          <h3>Hours</h3>
+          <p>Mon–Fri: 9:00 – 19:00<br/>Sat: 10:00 – 17:00<br/>Sun: By appointment</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MAP PLACEHOLDER ============ -->
+  <section class="map-section">
+    <div class="container">
+      <div class="map-placeholder reveal">
+        <div class="map-grid-bg" aria-hidden="true"></div>
+        <div class="map-pin" aria-hidden="true">◉</div>
+        <p>Map Loading...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo">VELOUR<span>.</span></a>
+        <p>Luxury, performance, and pedigree — delivered with quiet excellence since 2010.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cars.html">Inventory</a></li>
+          <li><a href="car-detail.html">Showcase</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <p>42 Crescent Boulevard<br/>Mayfair, London W1K 5LB</p>
+        <p>+44 20 7946 0991</p>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Twitter">TW</a>
+          <a href="#" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Velour Motors. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inventory — Velour Motors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">VELOUR<span>.</span></a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cars.html" class="active">Inventory</a></li>
+          <li><a href="car-detail.html">Showcase</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ PAGE HEADER ============ -->
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow reveal">Inventory</p>
+      <h1 class="reveal">The Collection</h1>
+      <p class="page-sub reveal">Browse our full lineup of curated luxury and performance vehicles.</p>
+    </div>
+  </section>
+
+  <!-- ============ FILTERS ============ -->
+  <section class="filters">
+    <div class="container">
+      <form class="filter-bar reveal" id="filterBar" autocomplete="off">
+        <div class="filter-field">
+          <label for="brandFilter">Brand</label>
+          <select id="brandFilter">
+            <option value="">All Brands</option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Audi">Audi</option>
+            <option value="Porsche">Porsche</option>
+            <option value="Ferrari">Ferrari</option>
+            <option value="Lamborghini">Lamborghini</option>
+            <option value="Range Rover">Range Rover</option>
+            <option value="Tesla">Tesla</option>
+            <option value="Bentley">Bentley</option>
+          </select>
+        </div>
+
+        <div class="filter-field">
+          <label for="priceFilter">Max Price</label>
+          <select id="priceFilter">
+            <option value="">Any Price</option>
+            <option value="100000">Under $100,000</option>
+            <option value="150000">Under $150,000</option>
+            <option value="250000">Under $250,000</option>
+            <option value="400000">Under $400,000</option>
+          </select>
+        </div>
+
+        <div class="filter-field">
+          <label for="yearFilter">Year</label>
+          <select id="yearFilter">
+            <option value="">All Years</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+          </select>
+        </div>
+
+        <button type="button" class="btn btn-gold" id="resetFilters">Reset</button>
+      </form>
+
+      <p class="results-count" id="resultsCount">Showing all cars</p>
+    </div>
+  </section>
+
+  <!-- ============ CAR GRID ============ -->
+  <section class="inventory">
+    <div class="container">
+      <div class="card-grid" id="carGrid">
+
+        <article class="car-card" data-brand="BMW" data-price="84900" data-year="2024">
+          <div class="car-img">
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800" alt="BMW M4 Competition" loading="lazy" />
+          </div>
+          <div class="car-body">
+            <h3>BMW M4 Competition</h3>
+            <p class="car-meta">2024 · Petrol · 8,500 km</p>
+            <div class="car-foot">
+              <span class="price">$84,900</span>
+              <a href="car-detail.html" class="btn-link">View Details →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card" data-brand="Mercedes" data-price="119000" data-year="2023">
+          <div class="car-img">
+            <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?w=800" alt="Mercedes-AMG GT" loading="lazy" />
+          </div>
+          <div class="car-body">
+            <h3>Mercedes-AMG GT</h3>
+            <p class="car-meta">2023 · Petrol · 12,200 km</p>
+            <div class="car-foot">
+              <span class="price">$119,000</span>
+              <a href="car-detail.html" class="btn-link">View Details →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card" data-brand="Audi" data-price="132500" data-year="2024">
+          <div class="car-img">
+            <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800" alt="Audi RS7 Sportback" loading="lazy" />
+          </div>
+          <div class="car-body">
+            <h3>Audi RS7 Sportback</h3>
+            <p class="car-meta">2024 · Petrol · 4,100 km</p>
+            <div class="car-foot">
+              <span class="price">$132,500</span>
+              <a href="car-detail.html" class="btn-link">View Details →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card" data-brand="Porsche" data-price="148000" data-year="2023">
+          <div class="car-img">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800" alt="Porsche 911 Carrera" loading="lazy" />
+          </div>
+          <div class="car-body">
+            <h3>Porsche 911 Carrera</h3>
+            <p class="car-meta">2023 · Petrol · 9,300 km</p>
+            <div class="car-foot">
+              <span class="price">$148,000</span>
+              <a href="car-detail.html" class="btn-link">View Details →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card" data-brand="Ferrari" data-price="248000" data-year="2022">
+          <div class="car-img">
+            <img src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?w=800" alt="Ferrari Roma" loading="lazy" />
+          </div>
+          <div class="car-body">
+            <h3>Ferrari Roma</h3>
+            <p class="car-meta">2022 · Petrol · 7,400 km</p>
+            <div class="car-foot">
+              <span class="price">$248,000</span>
+              <a href="car-detail.html" class="btn-link">View Details →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card" data-brand="Lamborghini" data-price="389000" data-year="2024">
+          <div class="car-img">
+            <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800" alt="Lamborghini Huracán" loading="lazy" />
+          </div>
+          <div class="car-body">
+            <h3>Lamborghini Huracán</h3>
+            <p class="car-meta">2024 · Petrol · 2,800 km</p>
+            <div class="car-foot">
+              <span class="price">$389,000</span>
+              <a href="car-detail.html" class="btn-link">View Details →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card" data-brand="Range Rover" data-price="112500" data-year="2023">
+          <div class="car-img">
+            <img src="https://images.unsplash.com/photo-1519245659620-e859806a8d3b?w=800" alt="Range Rover Autobiography" loading="lazy" />
+          </div>
+          <div class="car-body">
+            <h3>Range Rover Autobiography</h3>
+            <p class="car-meta">2023 · Diesel · 14,600 km</p>
+            <div class="car-foot">
+              <span class="price">$112,500</span>
+              <a href="car-detail.html" class="btn-link">View Details →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card" data-brand="Tesla" data-price="96000" data-year="2024">
+          <div class="car-img">
+            <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=800" alt="Tesla Model S Plaid" loading="lazy" />
+          </div>
+          <div class="car-body">
+            <h3>Tesla Model S Plaid</h3>
+            <p class="car-meta">2024 · Electric · 5,100 km</p>
+            <div class="car-foot">
+              <span class="price">$96,000</span>
+              <a href="car-detail.html" class="btn-link">View Details →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card" data-brand="Bentley" data-price="278000" data-year="2022">
+          <div class="car-img">
+            <img src="https://images.unsplash.com/photo-1631295387526-d4d96f44c97e?w=800" alt="Bentley Continental GT" loading="lazy" />
+          </div>
+          <div class="car-body">
+            <h3>Bentley Continental GT</h3>
+            <p class="car-meta">2022 · Petrol · 11,900 km</p>
+            <div class="car-foot">
+              <span class="price">$278,000</span>
+              <a href="car-detail.html" class="btn-link">View Details →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="empty-state" id="emptyState" hidden>
+        No vehicles match your filters. Try widening your search.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo">VELOUR<span>.</span></a>
+        <p>Luxury, performance, and pedigree — delivered with quiet excellence since 2010.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cars.html">Inventory</a></li>
+          <li><a href="car-detail.html">Showcase</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <p>42 Crescent Boulevard<br/>Mayfair, London W1K 5LB</p>
+        <p>+44 20 7946 0991</p>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Twitter">TW</a>
+          <a href="#" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Velour Motors. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

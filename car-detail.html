@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMW M4 Competition — Velour Motors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">VELOUR<span>.</span></a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cars.html">Inventory</a></li>
+          <li><a href="car-detail.html" class="active">Showcase</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ DETAIL HERO ============ -->
+  <section class="detail-hero">
+    <div class="container detail-grid">
+      <div class="detail-media reveal">
+        <div class="main-image">
+          <img id="mainImage" src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=1200" alt="BMW M4 Competition" />
+        </div>
+        <div class="thumb-row">
+          <button class="thumb active" data-src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=1200" aria-label="View BMW image">
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=400" alt="" loading="lazy" />
+          </button>
+          <button class="thumb" data-src="https://images.unsplash.com/photo-1617788138017-80ad40651399?w=1200" aria-label="View Mercedes image">
+            <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?w=400" alt="" loading="lazy" />
+          </button>
+          <button class="thumb" data-src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=1200" aria-label="View Audi image">
+            <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=400" alt="" loading="lazy" />
+          </button>
+        </div>
+      </div>
+
+      <div class="detail-info reveal">
+        <p class="eyebrow">2024 · BMW</p>
+        <h1>BMW M4 Competition</h1>
+        <p class="detail-price">$84,900</p>
+        <p class="detail-desc">
+          A masterpiece of German engineering — the M4 Competition pairs a hand-built
+          twin-turbo straight-six with surgical precision. 503 hp, 0–60 in 3.4s, and
+          a presence that turns every drive into an occasion.
+        </p>
+
+        <h3 class="specs-title">Specifications</h3>
+        <table class="specs-table">
+          <tbody>
+            <tr><th>Engine</th><td>3.0L Twin-Turbo I6</td></tr>
+            <tr><th>Transmission</th><td>8-speed Automatic</td></tr>
+            <tr><th>Fuel Type</th><td>Petrol</td></tr>
+            <tr><th>Mileage</th><td>8,500 km</td></tr>
+            <tr><th>Color</th><td>Frozen Black Metallic</td></tr>
+            <tr><th>Seats</th><td>4</td></tr>
+          </tbody>
+        </table>
+
+        <button class="btn btn-gold btn-lg" id="bookBtn">Book a Test Drive</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RELATED CARS ============ -->
+  <section class="featured">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">You May Also Like</p>
+        <h2>Related Vehicles</h2>
+      </div>
+
+      <div class="card-grid">
+        <article class="car-card reveal">
+          <div class="car-img">
+            <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?w=800" alt="Mercedes-AMG GT" loading="lazy" />
+          </div>
+          <div class="car-body">
+            <h3>Mercedes-AMG GT</h3>
+            <p class="car-meta">2023 · Petrol · 12,200 km</p>
+            <div class="car-foot">
+              <span class="price">$119,000</span>
+              <a href="car-detail.html" class="btn-link">View Details →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card reveal">
+          <div class="car-img">
+            <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800" alt="Audi RS7 Sportback" loading="lazy" />
+          </div>
+          <div class="car-body">
+            <h3>Audi RS7 Sportback</h3>
+            <p class="car-meta">2024 · Petrol · 4,100 km</p>
+            <div class="car-foot">
+              <span class="price">$132,500</span>
+              <a href="car-detail.html" class="btn-link">View Details →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="car-card reveal">
+          <div class="car-img">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800" alt="Porsche 911 Carrera" loading="lazy" />
+          </div>
+          <div class="car-body">
+            <h3>Porsche 911 Carrera</h3>
+            <p class="car-meta">2023 · Petrol · 9,300 km</p>
+            <div class="car-foot">
+              <span class="price">$148,000</span>
+              <a href="car-detail.html" class="btn-link">View Details →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MODAL ============ -->
+  <div class="modal" id="testDriveModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="document">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <h2 id="modalTitle">Book a Test Drive</h2>
+      <p class="modal-sub">Schedule a private test drive — one of our advisors will confirm within 24 hours.</p>
+
+      <form class="modal-form" id="testDriveForm" novalidate>
+        <div class="form-row">
+          <label for="td-name">Full Name</label>
+          <input type="text" id="td-name" name="name" placeholder="Jane Doe" />
+        </div>
+        <div class="form-row">
+          <label for="td-email">Email</label>
+          <input type="email" id="td-email" name="email" placeholder="jane@example.com" />
+        </div>
+        <div class="form-row">
+          <label for="td-date">Preferred Date</label>
+          <input type="date" id="td-date" name="date" />
+        </div>
+        <button type="submit" class="btn btn-gold btn-lg">Confirm Booking</button>
+        <p class="form-success" id="tdSuccess" hidden>Thank you — your test drive request has been received.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="logo">VELOUR<span>.</span></a>
+        <p>Luxury, performance, and pedigree — delivered with quiet excellence since 2010.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cars.html">Inventory</a></li>
+          <li><a href="car-detail.html">Showcase</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <p>42 Crescent Boulevard<br/>Mayfair, London W1K 5LB</p>
+        <p>+44 20 7946 0991</p>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Twitter">TW</a>
+          <a href="#" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Velour Motors. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
