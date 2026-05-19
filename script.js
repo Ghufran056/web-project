@@ -7,33 +7,6 @@
 (function () {
   'use strict';
 
-  /* ---------- 1. Custom Gold Cursor ---------- */
-  const cursor = document.getElementById('cursorDot');
-  if (cursor && window.matchMedia('(pointer: fine)').matches) {
-    let mouseX = 0, mouseY = 0, dotX = 0, dotY = 0;
-
-    document.addEventListener('mousemove', (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-    });
-
-    // Smooth interpolation for a slightly floaty feel.
-    const render = () => {
-      dotX += (mouseX - dotX) * 0.25;
-      dotY += (mouseY - dotY) * 0.25;
-      cursor.style.transform = `translate(${dotX}px, ${dotY}px) translate(-50%, -50%)`;
-      requestAnimationFrame(render);
-    };
-    render();
-
-    // Grow on interactive elements.
-    const growTargets = 'a, button, .car-card, .info-card, .why-card, .thumb, select, input, textarea';
-    document.querySelectorAll(growTargets).forEach((el) => {
-      el.addEventListener('mouseenter', () => cursor.classList.add('grow'));
-      el.addEventListener('mouseleave', () => cursor.classList.remove('grow'));
-    });
-  }
-
   /* ---------- 2. Navbar: shrink on scroll + hide on scroll down ---------- */
   const navbar = document.getElementById('navbar');
   if (navbar) {
